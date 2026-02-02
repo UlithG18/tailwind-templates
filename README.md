@@ -14,10 +14,14 @@ Elige el formateador de VS Code que prefieras (por ejemplo, el que dice Built-in
 
 extensions
 
-error lens.
-indent-rainbow.
-live server.
-tailwind helpers.
+error lens
+
+indent-rainbow
+
+live server
+
+tailwind helpers
+
 
 
 flujo de habitos / needed.
