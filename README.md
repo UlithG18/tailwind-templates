@@ -1,7 +1,3 @@
-A continuación te dejo un **README.md completo, profesional y realista**, escrito en **inglés**, alineado con **pruebas técnicas académicas**, bien estructurado y **sin mencionar SPA** (se asume una aplicación web con JavaScript vanilla y routing manual). Está pensado para que un evaluador pueda **clonar, correr y entender el proyecto sin adivinar nada**.
-
-Puedes copiarlo tal cual a tu repositorio y solo cambiar los datos personales y el nombre del proyecto cuando corresponda.
-
 ---
 
 # Event Management Application – JavaScript Module 3
