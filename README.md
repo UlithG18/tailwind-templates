@@ -1,3 +1,26 @@
+Abrir configuración de VS Code:
+Presiona Ctrl + , (Windows/Linux) o Cmd + , (Mac).
+
+Buscar “Format on Save”:
+En la barra de búsqueda escribe format on save. Aparecerá la opción Editor: Format On Save.
+Actívala. Esto hará que VS Code intente formatear el documento automáticamente cada vez que guardes (Ctrl + S o Cmd + S).
+
+Seleccionar un formateador por defecto (opcional):
+Aunque no tengas Prettier, VS Code tiene formateadores integrados.
+
+Ve a Ctrl + Shift + P → escribe Format Document With... → selecciona Configure Default Formatter.
+
+Elige el formateador de VS Code que prefieras (por ejemplo, el que dice Built-in para JavaScript/TypeScript/HTML).
+
+error lens
+indent-rainbow
+live server
+tailwind helpers
+
+flujo de habitos / needed
+M3/ 4JS/US needed
+ideahub / maybe
+
 ---
 
 # CRUDTASK – JavaScript Module 3
@@ -15,12 +38,12 @@ The focus of this project is on **JavaScript logic, role handling, and correct a
 
 ## Technologies Used
 
-* HTML5
-* CSS3 (including frameworks like Tailwind, Bootstrap, Materialize, Foundation, or Bulma)
-* Vanilla JavaScript (ES6+)
-* JSON Server (fake API)
-* LocalStorage or SessionStorage
-* Figma (UI designs reference)
+- HTML5
+- CSS3 (including frameworks like Tailwind, Bootstrap, Materialize, Foundation, or Bulma)
+- Vanilla JavaScript (ES6+)
+- JSON Server (fake API)
+- LocalStorage or SessionStorage
+- Figma (UI designs reference)
 
 ---
 
@@ -30,19 +53,19 @@ The system supports two types of users:
 
 ### User
 
-* Can register, log in, and manage their own tasks.
-* Can view, create, edit, and delete tasks assigned to them.
-* Can mark tasks as `pending`, `in progress`, or `completed`.
-* Can view and edit their own profile.
-* Access restricted to user-specific views only.
+- Can register, log in, and manage their own tasks.
+- Can view, create, edit, and delete tasks assigned to them.
+- Can mark tasks as `pending`, `in progress`, or `completed`.
+- Can view and edit their own profile.
+- Access restricted to user-specific views only.
 
 ### Administrator
 
-* Can log in through the same form and is redirected to the admin dashboard.
-* Can view, edit, delete, and change the status of **all tasks** in the system.
-* Can see general system metrics, including total tasks, pending tasks, and completed tasks.
-* Optional: view all registered users.
-* Has full access to admin-only views.
+- Can log in through the same form and is redirected to the admin dashboard.
+- Can view, edit, delete, and change the status of **all tasks** in the system.
+- Can see general system metrics, including total tasks, pending tasks, and completed tasks.
+- Optional: view all registered users.
+- Has full access to admin-only views.
 
 **Business Rule:** Users with the `user` role cannot access admin views, and admins do not use user-specific views.
 
@@ -52,39 +75,39 @@ The system supports two types of users:
 
 ### 1. Authentication System
 
-* User registration with automatic role assignment (`user`).
-* User login with credential validation against JSON Server.
-* Role-based route protection to restrict access.
-* Redirect logic depending on authentication state.
+- User registration with automatic role assignment (`user`).
+- User login with credential validation against JSON Server.
+- Role-based route protection to restrict access.
+- Redirect logic depending on authentication state.
 
 ### 2. Session Persistence
 
-* Session stored in **LocalStorage** or **SessionStorage**.
-* Session remains active after page reload.
-* Users without active sessions are redirected to the login page.
+- Session stored in **LocalStorage** or **SessionStorage**.
+- Session remains active after page reload.
+- Users without active sessions are redirected to the login page.
 
 ### 3. Task Management
 
-* List, create, edit, and delete tasks.
-* Task status can be changed (`pending`, `in progress`, `completed`).
-* Users can only see and manage their own tasks.
-* Admins can manage all tasks.
+- List, create, edit, and delete tasks.
+- Task status can be changed (`pending`, `in progress`, `completed`).
+- Users can only see and manage their own tasks.
+- Admins can manage all tasks.
 
 ### 4. Dashboard & Metrics (Admin)
 
-* Shows total tasks, pending tasks, completed tasks, and overall system metrics.
-* Provides task management functionality for all users.
+- Shows total tasks, pending tasks, completed tasks, and overall system metrics.
+- Provides task management functionality for all users.
 
 ### 5. User Profile
 
-* View personal information.
-* Logout functionality.
+- View personal information.
+- Logout functionality.
 
 ### 6. Data Consistency
 
-* All CRUD operations are synchronized with JSON Server.
-* Role validation ensures secure access to data.
-* Users cannot manipulate data directly in the browser without proper validation.
+- All CRUD operations are synchronized with JSON Server.
+- Role validation ensures secure access to data.
+- Users cannot manipulate data directly in the browser without proper validation.
 
 ---
 
@@ -102,9 +125,9 @@ The system supports two types of users:
 
 ### Route Logic
 
-* Unauthenticated users attempting protected routes are redirected to `/login`.
-* Authenticated users attempting `/login` or `/register` are redirected to their corresponding dashboard.
-* Role-based access is enforced on all routes.
+- Unauthenticated users attempting protected routes are redirected to `/login`.
+- Authenticated users attempting `/login` or `/register` are redirected to their corresponding dashboard.
+- Role-based access is enforced on all routes.
 
 ---
 
@@ -139,9 +162,9 @@ The project uses **JSON Server** to simulate an API.
 
 ### Example Entities
 
-* Users
-* Tasks
-* Optional: System Metrics
+- Users
+- Tasks
+- Optional: System Metrics
 
 A default administrator user can be included in `db.json`.
 
@@ -175,12 +198,13 @@ The visual design and component structure are defined in Figma: *https://www.fig
 
 ## Author Information
 
-* **Name:** Ulith Giraldo
-* **Clan:** Turing
+- **Name:** Ulith Giraldo
+- **Clan:** Turing
 
 ---
 
 ## Links
 
-* **Github Repo:** **
+- **Github Repo:** \*\*
+
 ---
