@@ -12,14 +12,24 @@ Ve a Ctrl + Shift + P → escribe Format Document With... → selecciona Configu
 
 Elige el formateador de VS Code que prefieras (por ejemplo, el que dice Built-in para JavaScript/TypeScript/HTML).
 
+extensions
+
 error lens
+
 indent-rainbow
+
 live server
+
 tailwind helpers
 
+
+
 flujo de habitos / needed
+
 M3/ 4JS/US needed
+
 ideahub / maybe
+
 
 ---
 
