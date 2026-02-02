@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendees - Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Event Manager - Admin</h1>
+        <a href="event-detail-admin.html" class="text-indigo-500 hover:underline">
+            Back to Event Details
+        </a>
+    </header>
+
+    <!-- Main content -->
+    <main class="p-6 space-y-6">
+
+        <!-- Event summary -->
+        <section class="bg-white rounded shadow p-4">
+            <!-- Event basic information -->
+            <h2 class="text-lg font-bold mb-2">Sample Event Name</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                <div>
+                    <p class="text-gray-500">Date</p>
+                    <p class="font-medium">2026-02-15</p>
+                </div>
+
+                <div>
+                    <p class="text-gray-500">Total Capacity</p>
+                    <p class="font-medium">50</p>
+                </div>
+
+                <div>
+                    <p class="text-gray-500">Registered Attendees</p>
+                    <p class="font-medium text-indigo-600">38</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attendees list -->
+        <section class="bg-white rounded shadow p-4">
+            <h3 class="text-lg font-bold mb-4">Registered Attendees</h3>
+
+            <!-- Attendees table -->
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b">
+                        <th class="py-2 px-4">Full Name</th>
+                        <th class="py-2 px-4">Email</th>
+                        <th class="py-2 px-4">Registration Date</th>
+                        <th class="py-2 px-4">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Example attendee row -->
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="py-2 px-4">John Doe</td>
+                        <td class="py-2 px-4">john@example.com</td>
+                        <td class="py-2 px-4">2026-01-20</td>
+                        <td class="py-2 px-4">
+                            <!-- Remove attendee action -->
+                            <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Render more attendees dynamically with JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Empty state (use when there are no attendees) -->
+            <div class="text-center text-gray-500 py-8">
+                No attendees registered for this event yet.
+            </div>
+
+        </section>
+
+        <!-- Footer actions -->
+        <div class="flex justify-end">
+            <a href="dashboard.html" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">
+                Back to Dashboard
+            </a>
+        </div>
+
+    </main>
+</body>
+
+</html>

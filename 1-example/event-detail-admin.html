@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Event Manager - Admin</h1>
+        <a href="dashboard.html" class="text-indigo-500 hover:underline">
+            Back to Dashboard
+        </a>
+    </header>
+
+    <!-- Main content -->
+    <main class="p-6 flex justify-center">
+        <!-- Event detail card -->
+        <div class="bg-white rounded shadow p-6 w-full max-w-3xl space-y-6">
+            <!-- Event title -->
+            <h2 class="text-2xl font-bold text-center">Sample Event Name</h2>
+
+            <!-- Event information -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <p class="text-sm text-gray-500">Date</p>
+                    <p class="font-medium">2026-02-15</p>
+                </div>
+
+                <div>
+                    <p class="text-sm text-gray-500">Capacity</p>
+                    <p class="font-medium">50</p>
+                </div>
+
+                <div>
+                    <p class="text-sm text-gray-500">Registered</p>
+                    <p class="font-medium text-indigo-600">38</p>
+                </div>
+            </div>
+
+            <!-- Event description -->
+            <div>
+                <p class="text-sm text-gray-500 mb-1">Description</p>
+                <p class="text-gray-700">
+                    Detailed event description visible to the administrator.
+                    This section can be edited from the edit event view.
+                </p>
+            </div>
+
+            <!-- Admin actions -->
+            <div class="border-t pt-4">
+                <h3 class="font-bold mb-3">Administrative Actions</h3>
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <!-- Edit event -->
+                    <a href="edit-event.html"
+                        class="bg-blue-500 text-white px-4 py-2 rounded text-center hover:bg-blue-600">
+                        Edit Event
+                    </a>
+
+                    <!-- Delete event -->
+                    <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                        Delete Event
+                    </button>
+
+                    <!-- View attendees -->
+                    <a href="#" class="bg-gray-600 text-white px-4 py-2 rounded text-center hover:bg-gray-700">
+                        View Attendees
+                    </a>
+                </div>
+            </div>
+
+            <!-- Info note -->
+            <p class="text-sm text-gray-500 text-center">
+                Any changes made here will affect all registered users.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

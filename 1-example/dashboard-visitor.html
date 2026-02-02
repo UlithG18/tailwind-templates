@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Dashboard - Event Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Event Manager</h1>
+
+        <!-- Visitor actions -->
+        <nav class="space-x-4">
+            <span class="text-gray-600">Visitor</span>
+            <button id="logoutBtn" class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+                Logout
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="p-6 space-y-8">
+
+        <!-- Section: Available events -->
+        <section class="bg-white p-4 rounded shadow">
+            <h2 class="text-lg font-bold mb-4">Available Events</h2>
+
+            <!-- Event list -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Event card example -->
+                <div class="border rounded p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg">Sample Event</h3>
+                        <p class="text-gray-600">Date: 2026-02-15</p>
+                        <p class="text-gray-600">Capacity: 50</p>
+                        <p class="text-gray-600">Available spots: 12</p>
+                    </div>
+
+                    <!-- Register button -->
+                    <button class="mt-4 bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600">
+                        Register
+                    </button>
+                </div>
+
+                <!-- Duplicate cards dynamically with JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section: My registrations -->
+        <section class="bg-white p-4 rounded shadow">
+            <h2 class="text-lg font-bold mb-4">My Registered Events</h2>
+
+            <!-- Registered events table -->
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b">
+                        <th class="py-2 px-4">Event</th>
+                        <th class="py-2 px-4">Date</th>
+                        <th class="py-2 px-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="py-2 px-4">Sample Event</td>
+                        <td class="py-2 px-4">2026-02-15</td>
+                        <td class="py-2 px-4 text-green-600 font-medium">Registered</td>
+                    </tr>
+
+                    <!-- Populate rows dynamically with JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>

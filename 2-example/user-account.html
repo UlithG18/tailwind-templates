@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestorApp - User Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-900 min-h-screen">
+
+    <nav class="bg-white px-10 py-4 flex justify-between items-center border-b">
+        <div class="flex items-center gap-2">
+            <div class="text-green-500">🍴</div>
+            <span class="font-bold text-xl">RestorApp</span>
+        </div>
+        <button class="flex items-center gap-2 border px-4 py-2 rounded-lg font-bold hover:bg-gray-50 transition">
+            <span class="rotate-180 inline-block">→</span> Log Out
+        </button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-10 grid grid-cols-12 gap-10">
+
+        <div class="col-span-7">
+            <div class="flex justify-between items-end mb-8">
+                <h2 class="text-3xl font-bold">Recent Orders</h2>
+                <a href="#" class="text-sm text-gray-500 font-medium hover:underline">View All</a>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-gray-100 p-4 rounded-full">🚚</div>
+                            <div>
+                                <h4 class="font-bold text-lg">#ORD-4402</h4>
+                                <p class="text-sm text-gray-400 font-medium">Oct 24, 2023 • 2 Items</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-xl mb-1">$45.50</p>
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">Delivered</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-end gap-4 items-center">
+                        <button class="text-sm font-semibold text-gray-500 hover:text-gray-800">View Receipt</button>
+                        <button
+                            class="bg-green-500 text-white px-8 py-2 rounded-xl font-bold shadow-lg shadow-green-200 hover:bg-green-600 transition">Reorder</button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-gray-100 p-4 rounded-full">🍲</div>
+                            <div>
+                                <h4 class="font-bold text-lg">#ORD-4401</h4>
+                                <p class="text-sm text-gray-400 font-medium">Oct 22, 2023 • 1 Item</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-xl mb-1">$12.00</p>
+                            <span
+                                class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold uppercase">Preparing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-5">
+            <h2 class="text-3xl font-bold mb-8">Account Details</h2>
+
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-10 text-center">
+                <div class="relative w-32 h-32 mx-auto mb-6">
+                    <img src="https://ui-avatars.com/api/?name=Alex+Student&background=random"
+                        class="w-full h-full rounded-full border-4 border-green-50 p-1" alt="Profile Avatar">
+                    <div
+                        class="absolute bottom-1 right-1 bg-green-500 border-4 border-white text-white p-1 rounded-full text-xs cursor-pointer">
+                        ✏️</div>
+                </div>
+
+                <h3 class="text-2xl font-bold">Alex Student</h3>
+                <p class="text-gray-400 font-medium mb-4">alex.dev@university.edu</p>
+                <span
+                    class="bg-gray-50 px-4 py-1 rounded-full text-xs font-bold text-gray-500 border border-gray-200 uppercase tracking-widest">Customer</span>
+
+                <div class="grid grid-cols-2 gap-4 my-10">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 text-left">
+                        <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-1">Total Orders</p>
+                        <p class="text-3xl font-bold">12</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 text-left">
+                        <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest mb-1">Loyalty Pts</p>
+                        <p class="text-3xl font-bold text-green-500">450</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <button
+                        class="w-full flex justify-between items-center p-4 border rounded-2xl hover:bg-gray-50 group transition">
+                        <div class="flex items-center gap-3 text-gray-600 font-semibold">💳 Payment Methods</div>
+                        <span class="text-gray-400 group-hover:translate-x-1 transition">❯</span>
+                    </button>
+                    <button
+                        class="w-full flex justify-between items-center p-4 border rounded-2xl hover:bg-gray-50 group transition">
+                        <div class="flex items-center gap-3 text-gray-600 font-semibold">📍 Saved Addresses</div>
+                        <span class="text-gray-400 group-hover:translate-x-1 transition">❯</span>
+                    </button>
+                    <button
+                        class="w-full flex justify-between items-center p-4 border rounded-2xl hover:bg-gray-50 group transition">
+                        <div class="flex items-center gap-3 text-gray-600 font-semibold">⚙️ Preferences</div>
+                        <span class="text-gray-400 group-hover:translate-x-1 transition">❯</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-green-50/50 p-6 rounded-2xl text-center border border-green-100">
+                <p class="text-xs text-green-600/60 leading-relaxed font-medium italic">
+                    RestorApp Academic Simulation V1.0<br>Performance monitoring active.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
