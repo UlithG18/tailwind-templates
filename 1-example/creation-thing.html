@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Create New Task</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- Top navbar -->
+    <header class="bg-white border-b px-6 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center text-white font-bold">
+                l
+            </div>
+            <span class="font-bold text-lg">l</span>
+        </div>
+
+        <!-- User menu -->
+        <div class="flex items-center gap-4">
+
+            <div class="flex items-center gap-2">
+                <img src="" class="w-8 h-8 rounded-full">
+                <span class="text-sm font-medium">Alex Morgan</span>
+                <span class="text-xs text-gray-500">Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="max-w-4xl mx-auto px-6 py-10">
+
+        <!-- Breadcrumb -->
+        <div class="text-sm text-gray-500 mb-2">
+            ← Back to Tasks / <span class="text-gray-700">Create New</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-2xl font-bold mb-6">Create New Task</h1>
+
+        <!-- Form card -->
+        <form class="bg-white rounded-xl shadow-sm p-8 space-y-6">
+
+            <!-- Task title -->
+            <div>
+                <label class="block text-sm font-medium mb-1">
+                    Task Title <span class="text-red-500">*</span>
+                </label>
+                <input type="text" placeholder="e.g., Complete Quarter 3 Report"
+                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+
+            <!-- Category & Priority -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Category</label>
+                    <select class="w-full px-4 py-2 border rounded-lg bg-white">
+                        <option>Select category...</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1">Priority</label>
+                    <select class="w-full px-4 py-2 border rounded-lg bg-white">
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Status & Due date -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Status</label>
+                    <select class="w-full px-4 py-2 border rounded-lg bg-white">
+                        <option>Pending</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1">Due Date</label>
+                    <input type="date" class="w-full px-4 py-2 border rounded-lg">
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div>
+                <label class="block text-sm font-medium mb-1">Description</label>
+                <textarea rows="4" placeholder="Add details about this task..."
+                    class="w-full px-4 py-2 border rounded-lg resize-none"></textarea>
+            </div>
+
+            <!-- Divider -->
+            <hr>
+
+            <!-- Actions -->
+            <div class="flex justify-end gap-4">
+                <button type="button" class="px-6 py-2 border rounded-lg hover:bg-gray-100">
+                    Cancel
+                </button>
+
+                <button type="submit"
+                    class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2">
+                    Save Task
+                </button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
